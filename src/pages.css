@@ -1,0 +1,22 @@
+@import './style.css';
+
+/* Contact Page */
+.contact-div p{
+    margin: 0;
+}
+.contact-div{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: flex-start;
+    row-gap: 3rem;
+}
+.phone-no{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.phone-no a{
+    margin: .5rem 0;
+}
