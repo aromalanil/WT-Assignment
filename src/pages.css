@@ -1,62 +1,95 @@
-@import './style.css';
+@import "./style.css";
 
 /* Contact Page */
-.contact-div p{
-    margin: 0;
+.contact-div p {
+  margin: 0;
 }
-.contact-div{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: flex-start;
-    row-gap: 3rem;
+.contact-div {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: flex-start;
+  row-gap: 3rem;
 }
-.phone-no{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+.phone-no {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
-.phone-no a{
-    margin: .5rem 0;
+.phone-no a {
+  margin: 0.5rem 0;
 }
 /* Contact Page Ends*/
 
 /* Profile Page */
-.profile-div h2{
-    font-size: 3rem;
+.profile-div h2 {
+  font-size: 3rem;
 }
-.hero{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.profile-image{
-    width: 18rem;
-    border-radius: 50%;
+.profile-image {
+  width: 18rem;
+  border-radius: 50%;
 }
-.profile-details{
-    padding: 0 20%;
-    margin-top: 3rem;
+.profile-details {
+  padding: 0 20%;
+  margin-top: 3rem;
 }
-.profile-details{
-    list-style: none;
+.profile-details {
+  list-style: none;
 }
-.profile-details li,.profile-details li a{
-    padding: 1rem 0;
-    font-size: 1.6rem;
+.profile-details li,
+.profile-details li a {
+  padding: 1rem 0;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 400px) {
-    .profile-details{
-        padding: 0 10%;
-        margin-top: 3rem;
-    }
-    .profile-image{
-        width: 40vw;
-    }
-    .hero h2{
-        font-size: 8vw;
-    }
+  .profile-details {
+    padding: 0 10%;
+    margin-top: 3rem;
+  }
+  .profile-image {
+    width: 40vw;
+  }
+  .hero h2 {
+    font-size: 8vw;
+  }
+}
+
+/* Gallery Page */
+.gallery {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+}
+
+.gallery div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wide{
+    grid-column: span 2;
+}
+.long{
+    grid-row: span 3;
+}
+
+.large{
+    grid-column: span 2;
+    grid-row: span 2;
 }

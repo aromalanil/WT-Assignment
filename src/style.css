@@ -7,9 +7,10 @@ html {
   font-size: 10px;
 }
 :root {
-  --footer-bg: #4e4741;
-  --main-bg: #74685f;
-  --nav-bg: #313131;
+  --footer-bg: rgb(82, 126, 197);
+  --main-bg: #282F33;
+  --nav-bg: #31393E;
+  --header-bg:#3a3636;
   --link-color: #e17b77;
   --font-color: #f3f3f2;
 }
@@ -61,7 +62,7 @@ body {
 }
 
 header {
-  background-color: #2d2627;
+  background-color: var(--header-bg);
   grid-column: 1/13;
   display: flex;
   justify-content: flex-start;
