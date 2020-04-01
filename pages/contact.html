@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <!--------------- Linking JS --------------->
+    <script defer src="../src/script.js"></script>
 </head>
 
 <body>
@@ -30,8 +32,11 @@
             <h3>College Of Engineering, Cherthala</h3>
         </div>
     </header>
+    <div class="menu" onclick="navVisible()">
+        <img src="../src/img/hamburger.svg" alt="">
+    </div>
 
-    <nav>
+    <nav id="nav">
         <ul class="nav-links">
             <li><a class="nav-link" href="../index.html">Home</a></li>
             <li><a class="nav-link" href="./about.html">About Us</a></li>
@@ -45,11 +50,13 @@
     <main>
         <h2>Contact Us</h2>
         <div class="contact-div">
-            <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;E-mail : </p><a target="_blank" href="mailto:office@cectl.ac.in">office@cectl.ac.in</a>
+            <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;E-mail : </p><a target="_blank"
+                href="mailto:office@cectl.ac.in">office@cectl.ac.in</a>
             <p><i class="fa fa-phone"></i>&nbsp;&nbsp;Phone : </p>
             <div class="phone-no"><a target="_blank" href="tel:+914782552714">+91 478 2552714</a><a target="_blank"
                     href="tel:+914782553416">+91 478 2553416</a></div>
-            <p><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Address : </p><p>College of Engineering Cherthala <br>Pallippuram P.O, Alappuzha, <br>Kerala,India <br>PIN-688541</p>
+            <p><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Address : </p>
+            <p>College of Engineering Cherthala <br>Pallippuram P.O, Alappuzha, <br>Kerala,India <br>PIN-688541</p>
         </div>
     </main>
 

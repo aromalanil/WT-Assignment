@@ -110,6 +110,17 @@ main {
   background-color: var(--font-color);
   margin-right: 3rem;
 }
+
+.menu img{
+  width: 4rem;
+}
+.menu{
+  display: none;
+  position: fixed;
+  top:5.5vh;
+  right:3vh;
+}
+
 #college_logo {
   width: 5.8rem;
 }
@@ -157,8 +168,21 @@ main p{
 }
 
 @media screen and (max-width: 770px) {
+  .menu{
+    display: block;
+  }
   nav {
-    display: none;
+    position: fixed;
+    z-index: 2;
+    width:60vw;
+    top:0;
+    bottom:0;
+    left:-60vw;
+    transition: .3s ease-in;
+    transition-property: left;
+  }
+  .visible-nav{
+    left:0;
   }
   main {
     grid-column: 1/13;
@@ -170,10 +194,16 @@ main p{
         grid-template-rows: 17vh calc(83vh - 55px) 55px;
     }
     h1{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     h3{
-        font-size: 1.2rem;
+        font-size: .9rem;
+    }
+    .menu img{
+      width: 3rem;
+    }
+    .menu{
+      top:6vh;
     }
     .logo-wrapper {
         transform: scale(.8);

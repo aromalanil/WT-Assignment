@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <!--------------- Linking JS --------------->
+    <script defer src="../src/script.js"></script>
 </head>
 
 <body>
@@ -29,9 +31,12 @@
             <h1>Dept. Of Computer Science</h1>
             <h3>College Of Engineering, Cherthala</h3>
         </div>
+        <div class="menu" onclick="navVisible()">
+            <img src="../src/img/hamburger.svg" alt="">
+        </div>
     </header>
 
-    <nav>
+    <nav id="nav">
         <ul class="nav-links">
             <li><a class="nav-link" href="../index.html">Home</a></li>
             <li><a class="nav-link" href="./about.html">About Us</a></li>
@@ -45,7 +50,7 @@
     <main>
         <div class="profile-div">
             <div class="hero">
-                <img class="profile-image" src="../src/img/aromal_anil.jpeg" alt="Aromal Anil">
+                <img class="profile-image" src="../src/img/aromal_anil.webp" alt="Aromal Anil">
                 <h2>Aromal Anil</h2>
             </div>
 
