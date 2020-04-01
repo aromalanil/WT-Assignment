@@ -7,7 +7,7 @@
 .contact-div{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 120px 1fr;
     align-items: flex-start;
     row-gap: 3rem;
 }
@@ -19,4 +19,44 @@
 }
 .phone-no a{
     margin: .5rem 0;
+}
+/* Contact Page Ends*/
+
+/* Profile Page */
+.profile-div h2{
+    font-size: 3rem;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-image{
+    width: 18rem;
+    border-radius: 50%;
+}
+.profile-details{
+    padding: 0 20%;
+    margin-top: 3rem;
+}
+.profile-details{
+    list-style: none;
+}
+.profile-details li,.profile-details li a{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 400px) {
+    .profile-details{
+        padding: 0 10%;
+        margin-top: 3rem;
+    }
+    .profile-image{
+        width: 40vw;
+    }
+    .hero h2{
+        font-size: 8vw;
+    }
 }
