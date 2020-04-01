@@ -102,3 +102,43 @@
     grid-auto-rows: 150px;
   }
 }
+
+/* Table Page */
+.academic-title{
+  text-align: center;
+}
+.table-div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.table-div table{
+  border-collapse: collapse;
+  width: 50rem;
+  text-align: left;
+  margin: 5rem 0;
+}
+
+table,th,td{
+  border: 1px solid #fff;
+}
+
+th,td{
+  padding: 1rem 2rem;
+}
+th{
+  background-color: var(--table);
+}
+
+caption{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .table-div table{
+    width: 80vw;
+  }
+}
