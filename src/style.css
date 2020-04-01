@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+:root {
+  --footer-bg: #4e4741;
+  --main-bg: #74685f;
+  --nav-bg: #313131;
+  --link-color: #e17b77;
+  --font-color: #f3f3f2;
+}
+
+p,
+li {
+  color: var(--font-color);
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5rem;
+  font-size: 1.45rem;
+}
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--font-color);
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+h3{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 2.3rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 17vh calc(83vh - 40px) 40px;
+}
+
+header {
+  background-color: #2d2627;
+  grid-column: 1/13;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  grid-column: 1/3;
+}
+
+main {
+  background-color: var(--main-bg);
+  grid-column: 3/13;
+  padding: 8rem 8%;
+}
+footer {
+  grid-column: 1/13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-bg);
+  color: white;
+}
+footer a {
+  color: currentColor;
+}
+footer a:hover {
+  color: var(--link-color);
+}
+
+nav,
+main {
+  height: 100%;
+}
+
+.logo-wrapper {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--font-color);
+  margin-right: 3rem;
+}
+#college_logo {
+  width: 5.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-links li {
+  margin-bottom: 3rem;
+}
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.nav-link:hover {
+  color: var(--link-color);
+}
+main{
+  overflow-y: scroll;
+}
+
+main p{
+    margin: 3rem 0;
+}
+
+.footer-item {
+  transform: scale(0.9);
+  padding: 0 5vw;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    grid-column: 1/4;
+  }
+  main {
+    grid-column: 4/13;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    display: none;
+  }
+  main {
+    grid-column: 1/13;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        grid-template-rows: 17vh calc(83vh - 55px) 55px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .logo-wrapper {
+        transform: scale(.8);
+        margin-right: .2vw;
+      }
+    header{
+        padding: 0 5%; 
+    }
+    main{
+        padding: 4rem 5%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
